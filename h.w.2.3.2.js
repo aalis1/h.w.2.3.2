@@ -12,15 +12,19 @@ class Button {
 let greenButton = new Button("button", "green", 15, 10);
 console.log(greenButton);
 
-testButton = {
-  type: "button",
-  color: "green",
-  width: 15,
-  height: 10,
-};
+// testButton = {
+//   type: "button",
+//   color: "green",
+//   width: 15,
+//   height: 10,
+// };
 
-if ((greenButton = testButton)) {
-  console.log(true);
-} else {
-  console.log(false);
+function testButton(type = "button", color = "green", width = 15, height = 10) {
+  if ((greenButton = testButton)) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
 }
+
+console.log(testButton());
