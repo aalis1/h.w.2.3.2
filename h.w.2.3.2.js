@@ -12,8 +12,5 @@ class Button {
 let greenButton = new Button("button", "green", 15, 10);
 console.log(greenButton);
 
-function testButton(greenButton) {
-  greenButton = "button " + " green " + " " + 15 + " " + 10 + " is true button";
-  console.log(greenButton);
-}
-testButton();
+let testButton = new Button();
+if ((testButton = greenButton)) console.log(testButton instanceof Button);
