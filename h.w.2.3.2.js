@@ -6,25 +6,14 @@ class Button {
     this.height = height;
   }
   onClick() {
-    console.log();
+    console.log(type, color, width, height);
   }
 }
 let greenButton = new Button("button", "green", 15, 10);
 console.log(greenButton);
 
-// testButton = {
-//   type: "button",
-//   color: "green",
-//   width: 15,
-//   height: 10,
-// };
-
-function testButton(type = "button", color = "green", width = 15, height = 10) {
-  if ((greenButton = testButton)) {
-    console.log(true);
-  } else {
-    console.log(false);
-  }
+function testButton(greenButton) {
+  greenButton = "button " + " green " + " " + 15 + " " + 10 + " is true button";
+  console.log(greenButton);
 }
-
-console.log(testButton());
+testButton();
