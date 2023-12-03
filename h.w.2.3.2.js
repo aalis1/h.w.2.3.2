@@ -10,10 +10,10 @@ class Button {
   }
 }
 let greenButton = new Button("button", "green", 15, 10);
-console.log(greenButton.onClick());
+greenButton.onClick();
 
 let testButton = new Button();
-if ((testButton = greenButton)) console.log(testButton instanceof Button);
+if ((testButton = greenButton)) console.log(greenButton instanceof Button);
 
 // class Button {
 //   constructor(type, color, width, height) {
