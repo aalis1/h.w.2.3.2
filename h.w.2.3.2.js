@@ -26,7 +26,7 @@ class Button {
     console.log(type, color, width, height);
   }
 }
-let greenButton = new Button("submit", "green", 30, 40);
+let greenButton = new Button("submit", "green", 15, 10);
 console.log(greenButton.onClick());
 
 function testButton(someButton) {
